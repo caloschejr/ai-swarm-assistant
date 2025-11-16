@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-swarm-assistant
+    repo: https://github.com/caloschejr/ai-swarm-assistant
+    branch: main
+    dockerBuildContext: .
+    env:
+      - key: DISABLE_RAY
+        value: "1"
